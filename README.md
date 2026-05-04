@@ -6,10 +6,10 @@
 2. DAG.py - Berisi penggunaan airflow  
 3. DAG_graph.png - Screenshot alur graph DAG  
 4. GX.ipynb - Penerapan Great Expectation    
-6. data_raw.csv - Data original 
-7. data_clean.csv - Data yang telah dilakukan Data Cleaning  
-8. ddl.txt - Berisi query sql pembuatan table dan input data pada table  
-9. images - Folder berisi screenshot hasil visualisasi yang dibuat
+5. data_raw.csv - Data original 
+6. data_clean.csv - Data yang telah dilakukan Data Cleaning  
+7. ddl.txt - Berisi query sql pembuatan table dan input data pada table  
+8. images - Folder berisi screenshot hasil visualisasi yang dibuat
 
 ```
 
