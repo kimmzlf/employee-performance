@@ -1,0 +1,52 @@
+# URL : https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data
+
+# Pembuatan Table
+CREATE TABLE table_m3(
+    Employee_ID VARCHAR(10) PRIMARY KEY,
+    Department VARCHAR(30),
+    Gender VARCHAR(15),
+    Age INT,
+    Job_Title VARCHAR(30),
+    Hire_Date TIMESTAMP,
+    Years_At_Company INT,
+    Education_Level VARCHAR(30),
+    Performance_Score INT,
+    Monthly_Salary FLOAT,
+    Work_Hours_Per_Week INT,
+    Projects_Handled INT,
+    Overtime_Hours INT,
+    Sick_Days INT,
+    Remote_Work_Frequency INT,
+    Team_Size INT,
+    Training_Hours INT,
+    Promotions INT,
+    Employee_Satisfaction_Score FLOAT,
+    Resigned BOOLEAN
+);
+
+# Insert Data
+COPY table_m3(
+    Employee_ID,
+    Department,
+    Gender,
+    Age,
+    Job_Title,
+    Hire_Date,
+    Years_At_Company,
+    Education_Level,
+    Performance_Score,
+    Monthly_Salary,
+    Work_Hours_Per_Week,
+    Projects_Handled,
+    Overtime_Hours,
+    Sick_Days,
+    Remote_Work_Frequency,
+    Team_Size,
+    Training_Hours,
+    Promotions,
+    Employee_Satisfaction_Score,
+    Resigned
+)
+FROM '/tmp/data_raw.csv'
+DELIMITER ','
+CSV HEADER;
